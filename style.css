@@ -16,3 +16,7 @@ body {
 .description {
   transition: 0.9s ease-in-out;
 }
+
+.audio {
+  display: none;
+}
