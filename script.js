@@ -14,12 +14,14 @@ var updateCountDown = setInterval(function () {
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     // Display the result in the browser
-    counter.innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+    counter.innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s";
     // If the count down is finished, will be written that text below
     if (distance < 0) {
         clearInterval(updateCountDown);
         counter.innerHTML = "The world already ended!";
     }
 }, 1000);
+// Audio
 var audio = document.getElementById("audio");
 audio.play();
+!audio.play() ? audio.play() : null;

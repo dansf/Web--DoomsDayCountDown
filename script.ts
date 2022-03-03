@@ -1,5 +1,5 @@
 var counter = document.querySelector(".counter");
-var followers = document.querySelector(".followers");
+var followers = document.querySelector(".text");
 
 // Count down date
 var doomsDay = new Date("Feb 18, 2030 12:00:00").getTime();
@@ -19,7 +19,7 @@ var updateCountDown = setInterval(() => {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in the browser
-  counter.innerHTML = `${days}:${hours}:${minutes}:${seconds}`;
+  counter.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
 
   // If the count down is finished, will be written that text below
   if (distance < 0) {
@@ -31,3 +31,4 @@ var updateCountDown = setInterval(() => {
 // Audio
 var audio = <HTMLMediaElement>document.getElementById("audio");
 audio.play();
+!audio.play() ? audio.play() : null;

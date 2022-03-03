@@ -9,20 +9,78 @@
     <link rel="stylesheet" href="style.css" />
     <!-- Link ShortCut icon -->
     <link rel="shortcut icon" href="/IconTitle.svg" />
+    <!-- Link Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <!-- <audio id="audio" src="sound.ogg" preload="auto" autoplay></audio> -->
     <div class="container">
-      <h2>The end of everything</h2>
-      <img
-        height="300px"
-        width="500px"
-        src="/explosion.gif"
-        alt="DoomsDayImg ☢️"
-      />
-      <h1 class="counter">1</h1>
-      <p class="followers">Time left</p>
+      <nav class="nav">
+        <a href="#" class="nav__logo"
+          >TheEnd
+          <!--<img src="#" alt="Logo">-->
+        </a>
+        <div class="nav__container">
+          <ul class="nav__container-list">
+            <li class="nav__container-list__item">
+              <a href="#" class="nav__container-list__item-link">Home</a>
+            </li>
+            <li class="nav__container-list__item">
+              <a href="#" class="nav__container-list__item-link">Features</a>
+            </li>
+            <li class="nav__container-list__item">
+              <a href="#" class="nav__container-list__item-link">About</a>
+            </li>
+            <li class="nav__container-list__item">
+              <a href="#" class="nav__container-list__item-link">Contanct</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="main section">
+        <div class="main__container">
+          <div class="main__container-text">
+            <h2>The end of everything</h2>
+            <h1 class="counter"></h1>
+            <h3 class="text">Time left</h3>
+          </div>
+          <div class="main__container-img__box">
+            <img
+            class="main__container-img__box-image"
+            height="300px"
+            width="500px"
+            src="/explosion.gif"
+            alt="DoomsDayImg ☢️"
+          />
+          </div>
+        </div>
+      </section>
+
+      <section class="mainII section">
+        <h1>Packages</h1>
+        <div class="mainII__container">
+          <div class="mainII__container-card">
+            <h2 class="mainII__container-card__title">House</h2>
+            <p class="mainII__container-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci vitae quasi consequuntur qui. </p>
+          </div>
+          <div class="mainII__container-card">
+            <h2 class="mainII__container-card__title">Security</h2>
+            <p class="mainII__container-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quasi numquam cupiditate debitis eveniet?!</p>
+          </div>
+          <div class="mainII__container-card">
+            <h2 class="mainII__container-card__title">Life</h2>
+            <p class="mainII__container-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere deleniti ipsum, libero modi quaerat. </p>
+          </div>
+        </div>
+
+      </section>
     </div>
-    <audio id="audio" src="sound.ogg" preload="auto" autoplay></audio>
     <script src="script.js"></script>
   </body>
 </html>

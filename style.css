@@ -1,22 +1,124 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
+:root {
+  --main-color: #c2c2c2;
+  --black-color: #000;
+  --green-color: #00ff88;
+  --border: 1px solid red;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  background: rgb(66, 66, 66);
+  background: var(--main-color);
+  /* min-height: 100vh; */
+  color: var(--black-color);
+  font-family: "Quicksand", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 968px;
+  /* border: var(--border); */
+  margin: 1rem auto 0 auto;
+}
+
+.section{
+  margin: 4rem 0 3rem;
+}
+
+.nav {
   display: flex;
-  justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  font-size: 44px;
+  justify-content: space-between;
+  /* padding: 0 2rem; */
+  font-size: 1.3rem;
+}
+
+.nav__container-list {
+  display: flex;
+  column-gap: 2rem;
+}
+
+.nav__container-list__item-link {
+  background-color: var(--main-color);
+  padding: 0.25rem 1rem;
+  border-radius: 50px;
+  transition: 0.3s ease-in-out;
+}
+
+.nav__container-list__item-link:hover {
+  box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 16px 0 rgba(255, 255, 255, 0.6);
+  color: var(--green-color);
+  transition: 0.3s ease-in-out;
+}
+
+.main__container {
+  display: flex;
+  /* border: var(--border); */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main__container-text{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, .25),
+  -8px -8px 16px 0 rgba(255, 255, 255, 0.6);
+  padding: 2rem 3rem;
+  border-radius: 30px;
+}
+
+.main__container-text h2{
+  font-size: 1.5rem;
+}
+
+.main__container-text h1{
+  font-size: 2.3rem;
+}
+
+.main__container-text p{
+  font-size: 1.5rem;
+}
+
+.mainII h1{
   text-align: center;
-  color: aliceblue;
-  font-family: "Poppins", sans-serif;
-  letter-spacing: 7px;
+  font-size: 2rem;
+  padding: 1rem 0;
 }
 
-.description {
-  transition: 0.9s ease-in-out;
+.mainII__container{
+  display: flex;
+  column-gap: 2rem;
+  align-items: center;
+  /* border: var(--border); */
 }
 
-.audio {
-  display: none;
+.mainII__container-card{
+  height: 20rem;
+  box-shadow: 
+    8px 8px 16px 0 rgba(0, 0, 0, .25),
+    -8px -8px 16px 0 rgba(255, 255, 255, 0.6);
+  border-radius: 30px;
+  padding: 1rem 1rem;
+  text-align: justify;
+}
+
+/* Add card grow animation */
+
+
+.mainII__container-card__title{
+  text-align: center;
 }
